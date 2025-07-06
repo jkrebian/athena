@@ -1,4 +1,27 @@
 
+title: Personal Blog
+description: Personal Blog based on Jekyll and GitHub Pages.
+social_link: 'https://mstdn.plus/'
+social_username: jkrebian
+github_repo: 'https://github.com/jkrebian/athena.git'
+github_username: jkrebian
+theme_color: light
+remote_theme: jkrebian/athena
+baseurl: /athena
+defaults:
+  - scope:
+      path: ''
+      type: pages
+    values:
+      category_name: ''
+  - scope:
+      path: ''
+      type: posts
+    values:
+      categories: ''
+remote_theme_layouts:
+  - ''
+
 # SEO
 title: Athena Jekyll Theme
 description: A simple and elegant theme for Jekyll and GitHub Pages.
@@ -33,6 +56,7 @@ defaults:
 # Stastic UI
 remote_theme_layouts: 
   - ""
+
   - default
   - page
   - post
@@ -44,6 +68,9 @@ social_links:
   - medium
   - dribbble
 
+
+
+
 theme_colors:
   - light
   - black
@@ -54,5 +81,8 @@ theme_colors:
   - red
   - white
   - yellow
+
+
+
 
 
