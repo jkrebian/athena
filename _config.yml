@@ -28,7 +28,7 @@ theme_color: light
 remote_theme: internet-de-france/athena
 baseurl: "/athena"
 remote_theme_layouts:
-- ''
+- 
 - default
 - page
 - post
