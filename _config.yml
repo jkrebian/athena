@@ -1,58 +1,94 @@
+title: John Krebian
+description: Blog site of JK-acme's Founder
+markdown: kramdown
+url: 'https://jkrebian.github.io'
+baseurl: "/starter"
+permalink: pretty
 
+twitter:
+  username: jkrebian
+  card: summary
 
-title: John Krebian' Blog
-timezone: Europe/London
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
+social:
+  name: John Krebian
+  links:
+     - https://linkedin.com/in/jkrebian
+     - https://twitter.com/jkrebian
+     - https://mstdn.plus/@jkrebian
+     - https://bsky.app/profile/jkrebian.bsky.app
 
-title: Personal Blog
-description: Personal Blog based on Jekyll and GitHub Pages.
-social_link: 'https://mstdn.plus/'
-social_username: jkrebian
-github_repo: 'https://github.com/jkrebian/athena.git'
-github_username: jkrebian
-theme_color: light
-remote_theme: jkrebian/athena
-baseurl: /athena
+# for atom feed
+author:
+  name: John Krebian
+  email: sirchanmp@hacari.net
+  twitter: jkrebian
+
+plugins:
+  - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    category_name: ''
-- scope:
-    path: ''
-    type: posts
-  values:
-    categories: ''
-description: A simple and elegant theme for Jekyll and GitHub Pages.
-social_link: twitter
-social_username: jkrebian
-github_repo: athena
-github_username: jkrebian
-theme_color: light
-remote_theme: jkrebian/athena
-baseurl: "/athena"
-remote_theme_layouts: 
-social_links:
-- twitter
-- mastodon
-- medium
-- substack
-- hashnode
-theme_colors:
-- light
-- black
-- blue
-- gray
-- magenta
-- orange
-- red
-- white
-- yellow
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:year/:month/:day/:title/
+      
+exclude: ["LICENSE", "README.md", "deploy.sh", "server.sh"]
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://jkrebian.github.io/starter/'
+  relativeLinks: 'https://jkrebian.github.io/starter/links.jsonp'
+  media: 'media'
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
