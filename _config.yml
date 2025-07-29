@@ -1,88 +1,51 @@
-
-title: Personal Blog
-description: Personal Blog based on Jekyll and GitHub Pages.
-social_link: 'https://mstdn.plus/'
-social_username: jkrebian
-github_repo: 'https://github.com/jkrebian/athena.git'
-github_username: jkrebian
-theme_color: light
-remote_theme: jkrebian/athena
-baseurl: /athena
-defaults:
-  - scope:
-      path: ''
-      type: pages
-    values:
-      category_name: ''
-  - scope:
-      path: ''
-      type: posts
-    values:
-      categories: ''
-remote_theme_layouts:
-  - ''
-
-# SEO
+---
 title: Athena Jekyll Theme
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    category_name: ''
+- scope:
+    path: ''
+    type: posts
+  values:
+    categories: ''
 description: A simple and elegant theme for Jekyll and GitHub Pages.
-
-# social
 social_link: twitter
 social_username: broccolini
-github_repo: athena # the GitHub repo name for your project
+github_repo: athena
 github_username: broccolini
 theme_color: light
-
-# Theme
-remote_theme: 'internet-de-france/athena'
-baseurl: '/athena'
-
-# Defaults
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      category_name: ""
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      categories: ""
-
-# Stastic UI
-remote_theme_layouts: 
-  - ""
-
-  - default
-  - page
-  - post
-  - home
-  - category_index
+remote_theme: internet-de-france/athena
+baseurl: "/athena"
+remote_theme_layouts:
+- ''
+- default
+- page
+- post
+- home
+- category_index
 social_links:
-  - twitter
-  - instagram
-  - medium
-  - dribbble
-
-
-
-
+- twitter
+- instagram
+- medium
+- dribbble
 theme_colors:
-  - light
-  - black
-  - blue
-  - gray
-  - magenta
-  - orange
-  - red
-  - white
-  - yellow
-
-
-
-
-
+- light
+- black
+- blue
+- gray
+- magenta
+- orange
+- red
+- white
+- yellow

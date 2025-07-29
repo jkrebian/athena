@@ -1,7 +1,7 @@
 ---
-layout: category_index
 title: Writing
-permalink: /writing/
+permalink: "/writing/"
+layout: category_index
 category_name: writing
 ---
 
