@@ -1,4 +1,5 @@
----
+
+
 title: John Krebian' Blog
 timezone: Europe/London
 collections:
@@ -8,6 +9,17 @@ collections:
   uploads:
     title: Uploads
     output: true
+
+title: Personal Blog
+description: Personal Blog based on Jekyll and GitHub Pages.
+social_link: 'https://mstdn.plus/'
+social_username: jkrebian
+github_repo: 'https://github.com/jkrebian/athena.git'
+github_username: jkrebian
+theme_color: light
+remote_theme: jkrebian/athena
+baseurl: /athena
+
 defaults:
 - scope:
     path: ''
